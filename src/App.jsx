@@ -203,7 +203,7 @@ setTimeout(() => {
     window.location.reload();
 }}/>}
       <Character />
-      <div className='obstaclereciever translate-x-[100%]' id='obstacle' style={{animation:'beobstacle  infinite linear',animationDuration:newObstacleDurations +'s',animationDelay:animationDelay+'s',backgroundImage:!Bgimage ?"url('/public/eu.png')":"url('/public/magical-crystal-with-swirling-colors-digital-art-style-illustration_812426-6439.png')"}}></div>
+      <div className='obstaclereciever translate-x-[100%]' id='obstacle' style={{animation:'beobstacle  infinite linear',animationDuration:newObstacleDurations +'s',animationDelay:animationDelay+'s',backgroundImage:!Bgimage ?"url('/eu.png')":"url('/magical-crystal-with-swirling-colors-digital-art-style-illustration_812426-6439.png')"}}></div>
     {/* <div className="flex justify-center gap-0 p-0 m-0 obstaclereciever " id='obstacle2' style={{animation:'beobstacle2  infinite linear',animationDuration:(newObstacleDurations>0 && (newObstacleDurations+1.6)) +'s',
     animationDelay:(animationDelay+1.5)+'s'
     
