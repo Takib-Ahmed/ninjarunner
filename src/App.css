@@ -1,0 +1,167 @@
+
+#bg{
+
+  width: 100vw;
+
+  z-index: -1;
+  background-image: url(/public/gamebg.jpeg);
+  
+  background-repeat: repeat-x;
+  background-size:1556px 825px;
+
+background-position: 0  0;
+animation: toleft  linear infinite;
+
+
+}
+
+@keyframes toleft {
+  to{
+    background-position:  -10900px 0;
+  }
+  
+}
+.score{
+  color: #8fe68f;
+  border: 3px solid #8fe68f;
+  border-radius: 50px;
+  background-color:tomato;
+  filter: invert(1);
+}
+.box{
+  position: fixed;
+top: 59%;
+left: 10%;
+filter: invert(1);
+    height: 404px;
+    width: 250px;
+    background-image: url(/urfgbgui.png);
+    background-size: auto 300%;
+    transition: all 0.5s ;
+    --position-top:50%;
+    background-position: 0 var(--position-top);
+
+}
+#box{
+  animation: addmovement  steps(9) infinite;
+animation-duration: 2s;
+}
+ .run{
+  --position-top:89%;
+  
+}
+.jump{
+
+  --position-top:8% ;
+
+  animation-delay: 0.2s !important;
+
+  transform: translateY(-260px) translateX(150px)!important;
+  transition: all 0.5s !important;
+
+}
+.slowthechange{
+  transition: all 1s !important;
+}
+
+@keyframes addmovement {
+  from{
+    background-position: 0 var(--position-top);
+  }
+    to{
+      background-position: 102% var(--position-top);  
+    }
+    
+}
+
+/* Control button container */
+.controls {
+  position: absolute;
+  bottom: 50px; /* Positions the buttons near the bottom of the screen */
+  display: flex;
+  gap: 20px; /* Spacing between the buttons */
+}
+
+/* Styling for each control button */
+.control-btn {
+  padding: 10px ;
+  background-color:tomato;
+  border: none;
+  border-radius: 10px;
+
+  color: white;
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+  align-items: center;
+
+filter: invert(1);
+  display: flex;
+  justify-content: center;
+}
+
+/* Button hover effect */
+
+
+/* Button press effect */
+.control-btn:active {
+  background-color: tomato;
+  /* outline:  5px solid #701970; */
+  
+ img{
+filter: invert(1);
+ }
+
+}
+
+#obstacle{
+  position: fixed;
+right: 0%;
+  bottom: 2.5%;
+  width: 150px;
+ 
+  height: 150px;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  animation:   beobstacle  infinite linear;
+ 
+}
+#obstacle2{
+  position: fixed;
+  right: -20%;
+    bottom: 2.5%;
+
+
+    & .childobstacle{
+
+        width: 150px;
+       
+        height: 150px;
+        background-image: url(/public/magical-crystal-with-swirling-colors-digital-art-style-illustration_812426-6439.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+@keyframes beobstacle {
+  from{
+   transform: translateX(100%);
+  }
+  to{
+    transform: translateX(-2500px);
+  }
+}
+@keyframes beobstacle2 {
+  from{
+   transform: translateX(250%);
+  }
+  to{
+    transform: translateX(-3000px);
+  }
+}
+
+
+.animationpaused{
+  animation-play-state: paused !important;
+}
