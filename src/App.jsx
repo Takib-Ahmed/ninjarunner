@@ -195,7 +195,7 @@ setTimeout(() => {
   setInterval(() => {
     setbgimage((prev)=>!prev) 
   ;
-  }, 9000);
+  }, 15000);
 }, 4000);
   return (
     <>
