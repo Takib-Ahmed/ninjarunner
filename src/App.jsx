@@ -226,11 +226,11 @@ setTimeout(() => {
           id="jump-btn"
           onClick={handleJump}
         > 
- <img src="/public/keyboard_arrow_up_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="" className='  w-16 ' />
+ <img src="/keyboard_arrow_up_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="" className='  w-16 ' />
      </button>
 
         <button className="control-btn text-center align-middle p-5 " id="forward-btn" onClick={handleJump2}>
-        <img src="/public/arrow_forward_ios_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 (1).png" alt="" className=' w-12 ' />
+        <img src="/arrow_forward_ios_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 (1).png" alt="" className=' w-12 ' />
         </button>
       
       </div>
